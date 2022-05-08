@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Block Game</title>
+
+		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+
+	<body>
+		<div id="instructions">
+			<p>Pick a number that will grow your stack of blocks. If you choose the same number as the bot, you both lose and the game ends. If you get to 10 before the bot you win. (Click to close)</p>
+		</div>
+
+		<section class="half">
+
+			<p id="title1">First to </p>
+
+			<section class="playArea" id="playerBlocks">
+				
+				
+				
+			</section>
+
+			<section class="inputArea playerArea">
+
+				<section class="buttonArea">
+
+					<span id="n1">1</span>
+					<span id="n2">2</span>
+					<span id="n3">3</span>
+					<span id="n4">4</span>
+					
+				</section>
+
+				<section class="scoreArea">
+
+					<span>YOUR SCORE:</span>
+					<span id="pScore">0</span>
+
+				</section>
+			</section>
+
+		</section>
+
+		<section class="half">
+
+			<p id="title2"> 10 wins!</p>
+
+			<div id="HowTo"><p >How to play</p></div>
+			
+
+			<section class="playArea" id="botBlocks">
+				
+			</section>
+			
+			<section class="inputArea botArea">
+
+				<section>
+
+					<img src="img/bot.png" alt="bot">
+
+				</section>
+
+				<section class="scoreArea">
+
+					<span>BOT'S <br> SCORE:</span>
+					<span id="bScore">0</span>
+
+				</section>
+
+			</section>
+
+		</section>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+
+</html>

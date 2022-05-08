@@ -1,0 +1,156 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  display: flex;
+  font-family: 'Roboto Mono',sans-serif;
+}
+
+#title1 {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 3px;
+}
+
+#title2 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 3px;
+}
+
+#HowTo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 130px;
+  height: 30px;
+  text-align: center;
+}
+
+#HowTo:hover,
+#instructions:hover {
+  cursor: pointer;
+}
+
+#instructions {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 500px;
+  background-color: black;
+  position: absolute;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.half {
+  width: 50%;
+  height: 500px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.playArea {
+  background: white;
+  height: 70%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border: 3px solid black;
+  border-bottom-style: none ;
+  gap: 4px;
+}
+
+.inputArea {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+  height: 30%;
+  border: 3px solid white;
+  /* padding-top: 10px; */
+}
+
+.botArea {
+  display: flex;
+  flex-direction: row;
+}
+
+#playerInput,
+button {
+  width: 50%;
+  height: 35%;
+}
+
+.buttonArea {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+
+.scoreArea {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  
+}
+
+img {
+  height: 125px;
+  width: 125px;
+  padding-top: 10px;
+}
+
+#n1,
+#n2,
+#n3,
+#n4 {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: black;
+border: 3px solid white;
+
+}
+
+div {
+  color: white;
+  margin-bottom: 3px;
+  height: 20px;
+  width: 30px;
+  background-color: black;
+  border: 4px solid white;
+  animation: show 200ms ease-in-out;
+}
+
+@keyframes show {
+  0% {
+    opacity: .5;
+    transform: scale(0)
+  }
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
